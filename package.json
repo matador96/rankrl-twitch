@@ -1,5 +1,5 @@
 {
-  "name": "rankapi-app",
+  "name": "rankrl-twitch",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
