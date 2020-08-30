@@ -1,0 +1,90 @@
+.App {
+  text-align: center;
+}
+
+body {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.ant-layout-header {
+  color: #fff !important;
+  font-weight: 700;
+  font-size: 30px;
+  background: #1890ffe6 !important;
+  font-weight: 400;
+
+  text-align: left;
+  padding: 0 20px !important;
+  margin: 0 -20px !important;
+  border-radius: 2px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+}
+
+.playlist-checkbox .ant-col {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.first-row {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.first-row .ant-col-xs-8 {
+  text-align: left;
+}
+.playlist-checkbox .ant-checkbox-wrapper {
+  margin-left: 0 !important;
+  margin-bottom: 5px;
+}
+.ant-layout-content {
+  padding-top: 20px;
+}
+.rocketlabel {
+  margin-top: 5px;
+  text-align: left;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.ant-select-selector .ant-select-selection-item {
+  text-align: left;
+}
+
+.playlist-checkbox label {
+  font-weight: 400;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
