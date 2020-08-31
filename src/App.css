@@ -4,6 +4,7 @@
 
 body {
   font-family: "Montserrat", sans-serif !important;
+  background: #f0f2f5 !important;
 }
 
 .App-logo {
@@ -17,29 +18,55 @@ body {
   font-size: 30px;
   background: #1890ffe6 !important;
   font-weight: 400;
-
-  text-align: left;
-  padding: 0 20px !important;
-  margin: 0 -20px !important;
+  text-align: center;
   border-radius: 2px;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+
+.right-block{
+  opacity: 0.5;
+  padding: 10px 0px 5px 0px;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 14px;
+    background: #f0f2f5;
+    text-align: right;
+}
+
+.alert-message {
+  text-align: left !important;
+  margin-top: 20px !important;
+}
+
+.command-list {
+  margin-top: 15px;
+}
+
+.command-list > div{
+  margin: 10px 0;
 }
 
 .playlist-checkbox .ant-col {
   text-align: left;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .first-row {
-  margin-top: 20px;
+  margin-top: 5px;
   margin-bottom: 10px;
 }
 .first-row .ant-col-xs-8 {
   text-align: left;
+  max-width: 190px;
 }
 .playlist-checkbox .ant-checkbox-wrapper {
   margin-left: 0 !important;
   margin-bottom: 5px;
+  width: 190px;
 }
 .ant-layout-content {
   padding-top: 20px;
@@ -80,11 +107,40 @@ body {
   color: #61dafb;
 }
 
+.ant-layout-content > .ant-row > .ant-col-xs-10 {
+  display: block;
+  -ms-flex: 0 0 90%;
+  flex: 0 0 90%;
+  max-width: 800px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/*992 - 1199*/
+@media screen and (max-width: 992px), (max-device-width: 992px) {
+  .ant-layout-content > .ant-row > .ant-col-xs-10 {
+    display: block;
+    -ms-flex: 0 0 90%;
+    flex: 0 0 90%;
+    max-width: 90%;
+  }
+  .ant-layout-header {
+    height: auto;
+    padding: 15px 50px;
+    font-size: 25px;
+    line-height: 1.3;
+  }
+  .first-row .ant-col-xs-8 {
+    max-width: 190px;
+    -ms-flex: 0 0 90%;
+    flex: 0 0 90%;
+    max-width: 90%;
   }
 }
