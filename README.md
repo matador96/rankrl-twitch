@@ -1,5 +1,6 @@
 # rankrl-twitch
 Rocket League Rank API for Twitch (React/Node.js)
+Node.js: Web scraping TRN for parse Rocket League ranks
 
 ![Picture](https://sun9-28.userapi.com/FbMsr4TDgqu7kgPAyw3YDE-6pYVYSm_0z2fnUw/O-J6q6LllSs.jpg)
 
